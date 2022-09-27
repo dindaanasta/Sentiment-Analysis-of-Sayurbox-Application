@@ -40,20 +40,33 @@ Data ulasan yang telah bersih, ditentukan polaritas sentimen dengan cara mengkla
 
 ![image](https://user-images.githubusercontent.com/71063726/192549808-12b2031d-f1c0-4ca6-b309-66a73aa57b6c.png)
 
-                                         Worcloud Kata Positif
+                              Worcloud Kata Positif
 ![image](https://user-images.githubusercontent.com/71063726/192549931-af1e08a5-ab96-4d25-b4e1-c1eee07b2424.png)
 
-                                         WordCloud Kata Negatif
+                              WordCloud Kata Negatif
 ![image](https://user-images.githubusercontent.com/71063726/192549991-2d7d2ce3-de6d-4279-acf3-2f7fc289e59d.png)
 
-## PEMODELAN
+## PEMBAGIAN DATA      
 
+Sebelum data diimplementasikan ke dalam algoritma Support Vector Machine, ulasan dibagi terlebih dahulu menjadi data latih dan uji. Di projek ini, dilakukan trial and error dengan memasukkan jumlah test_size dan random_state yang berbeda ke dalam program. Percobaan ini melibatkan 3 jenis rasio, yaitu 90:10, 80:20, 70:30, 6 angka random_state, yaitu 0, 5, 10, 15, 20, dan 25. 
 
+                  Percobaan Penelitian test_size dan random_state
 ![image](https://user-images.githubusercontent.com/71063726/192552262-cd013550-7b92-4a33-880a-e5c60103a81d.png)
 
+Dari gambar di atas, diperoleh test_size = 0.1 dengan random_state 20 menghasilkan akurasi yang sangat tinggi, yaitu 94%. Maka dari itu, projek ini akan menggunakan test_size dengan ukuran 0.1 dan random_state bernilai 20. 
+
+## HASIL      
 
 ![image](https://user-images.githubusercontent.com/71063726/192552067-081bf50b-8575-492e-8e57-c801eae660f6.png)
 
+Dari gambar di atas, sebanyak 162 data uji, model berhasil memprediksi ulasan positif dengan benar (True Positive) sebanyak 109 data dan ulasan negatif (True Negative) sebanyak 44 data. Dapat diketahui bahwa model melakukan sedikit kesalahan dalam memprediksi ulasan baru, yaitu sebanyak 9 data. 
+
+![image](https://user-images.githubusercontent.com/71063726/192555784-dc8e6b98-9610-412d-a0e8-5bebb95a020b.png)
+
+Diperoleh nilai akurasi algoritma Support Vector Machine dalam memprediksi ulasan Sayurbox menjadi positif dan negatif sebesar 94%, recall 96%, dan precision 96%. Artinya, algoritma Support Vector Machine memiliki kinerja yang baik jika dikolaborasikan dengan metode lexicon-based dalam memprediksi data ulasan aplikasi Sayurbox. 
+
 ![image](https://user-images.githubusercontent.com/71063726/192552139-ebe1debe-e8fe-4e5e-8149-bf913d5e09e7.png)
 
+Berdasarkan pada gambar di atas, model berhasil memprediksi data uji ulasan
+sebagai sentimen positif sebesar 70,37% dan sentimen negatif sebesar 29,63%. Dapat disimpulkan bahwa model cenderung memprediksi ulasan baru sebagai sentimen positif dibandingkan dengan negatif
 
