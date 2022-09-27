@@ -40,10 +40,10 @@ Data ulasan yang telah bersih, ditentukan polaritas sentimen dengan cara mengkla
 
 ![image](https://user-images.githubusercontent.com/71063726/192549808-12b2031d-f1c0-4ca6-b309-66a73aa57b6c.png)
 
-                                      Worcloud Kata Positif
+                                         Worcloud Kata Positif
 ![image](https://user-images.githubusercontent.com/71063726/192549931-af1e08a5-ab96-4d25-b4e1-c1eee07b2424.png)
 
-                                      WordCloud Kata Negatif
+                                         WordCloud Kata Negatif
 ![image](https://user-images.githubusercontent.com/71063726/192549991-2d7d2ce3-de6d-4279-acf3-2f7fc289e59d.png)
 
 ## PEMODELAN
